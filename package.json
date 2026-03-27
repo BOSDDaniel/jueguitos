@@ -1,0 +1,23 @@
+{
+  "name": "jueguitos-auth",
+  "version": "1.0.0",
+  "description": "Sistema de autenticación con roles para jueguitosDB en Aiven",
+  "main": "src/index.js",
+  "scripts": {
+    "start":   "node src/index.js",
+    "dev":     "nodemon src/index.js",
+    "db:init": "mysql --host mysql-5ddca62-bosddaniel-6781.a.aivencloud.com --port 20571 --user avnadmin --password --ssl-mode=REQUIRED jueguitosDB < database/schema.sql"
+  },
+  "dependencies": {
+    "bcrypt":       "^5.1.1",
+    "cors":         "^2.8.5",
+    "dotenv":       "^16.4.5",
+    "express":      "^4.19.2",
+    "helmet":       "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2":       "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
